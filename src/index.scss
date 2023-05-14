@@ -1,1 +1,35 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    background-color: #393e42;
+}
+
+.navbar {
+    padding-top: 0;
+}
+
+.navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.content {
+    position: relative;
+    top: 50px;
+    color: white;
+}
+
+.footer {
+    width: 99%;
+    top: 100px;
+    position: relative;
+    color: white;
+    background-color: #343536;
+}
+
+.hex_footer {
+    width: 46px;
+	height: 40px;
+	position: relative;
+    background: 'templatemo_footerhexa.png' no-repeat;
+}
