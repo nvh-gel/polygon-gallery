@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Logo from './components/logo';
+import MenuBar from './components/menu';
 
-function App() {
+const App: React.FC<any> = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Navbar fixed='top'>
+        <Container>
+          <Navbar.Brand>
+            <Logo />
+          </Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Brand>
+            <MenuBar />
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+    </Container>
   );
 }
 
